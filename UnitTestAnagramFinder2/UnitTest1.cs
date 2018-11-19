@@ -23,7 +23,9 @@ namespace UnitTestAnagramFinder2
             string currentValue = "stop";
             string newValue = "tops";
 
-            Assert.AreEqual("stop,tops", currentValue + "," + newValue);
+            string resultString = program.CreateDictValue(currentValue, newValue);
+
+            Assert.AreEqual("stop,tops", resultString);
         }
     }
 }
